@@ -2,7 +2,7 @@ body{
             margin:0;
             padding:0;
             box-sizing: border-box;
-            background: #006633;
+            background: #edfacf;
             -webkit-perspective: 300;
             font-family: 'Roboto', sans-serif;
 
@@ -21,7 +21,7 @@ header{
     top: 0;
 }
 nav {
-  background-color: #33cc33;
+  background-color: #d5faba;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +34,7 @@ nav {
 }
 
 .logo img {
-  width: 180px;
+  width: 220px;
 }
 
 .menu {
@@ -115,14 +115,14 @@ nav {
 
 a{
   text-decoration: none;
-  color: #33cc33;
+  color: #006633;
 }
 
 /* inicio */
 h1{
   padding-top: 50px;
     text-align: center;
-    color: #33cc33;
+    color: #006633;
 }
         .contenedor{
             margin-top: 40px;
@@ -225,7 +225,7 @@ text-align: center;
 .option li
 {
 list-style: none;
-color: #33cc33;
+color: #006633;
 font-size: 60px;
 font-weight: 500;
 position: relative;
@@ -252,7 +252,7 @@ position: absolute;
 left: 0;
 height: 100%;
 width: 100%;
-background: #006633;
+background: #edfacf;
 border-left: 2px solid #006633;
 animation: typing 3s steps(13) infinite;
 }
@@ -312,6 +312,7 @@ ul .ubicacion{
 
 .shopping-list li {
   font-size: 22px;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
