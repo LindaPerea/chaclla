@@ -1,18 +1,125 @@
 body{
             margin:0;
             padding:0;
-            background: rgb(98, 159, 249);
+            box-sizing: border-box;
+            background: #006633;
             -webkit-perspective: 300;
-            font-family: 'Marko One', serif;
+            font-family: 'Roboto', sans-serif;
+
+            
         }
         
+        
 .contenedor-gral{
-    margin: 30px;
-    width: 100vw;
-    height: 100vh;
+    /* margin-top: 30px; */
+    width: 100%;
+    height: 100%;
 }
+
+/* Nav */
+header{
+    top: 0;
+}
+nav {
+  background-color: #33cc33;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.logo img {
+  width: 180px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu li a {
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-toggle.active .line:nth-of-type(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-toggle.active .line:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active .line:nth-of-type(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 998;
+    padding: 20px;
+    overflow-y: scroll;
+  }
+
+  .menu.active li {
+    margin: 10px 0;
+  }
+
+  .menu.active li a {
+    font-size: 24px;
+  }
+}
+
+
+
+/* inicio */
 h1{
+
     text-align: center;
+    color: #541f17;
 }
         .contenedor{
             margin-top: 40px;
@@ -94,9 +201,12 @@ h1{
         }
 
         /* dinamy texts */
+.main {
+    padding-top: 150px;
+}
 .main .text
 {
-color: #fff;
+color: #541f17;
 font-size: 60px;
 font-weight: 400;
 text-align: center;
@@ -112,7 +222,7 @@ text-align: center;
 .option li
 {
 list-style: none;
-color: fuchsia;
+color: #33cc33;
 font-size: 60px;
 font-weight: 500;
 position: relative;
@@ -139,9 +249,9 @@ position: absolute;
 left: 0;
 height: 100%;
 width: 100%;
-background: rgb(98, 159, 249);
-border-left: 2px solid #face30;
-animation: typing 3s steps(10) infinite;
+background: #006633;
+border-left: 2px solid #006633;
+animation: typing 3s steps(13) infinite;
 }
 @keyframes typing
 {
@@ -153,9 +263,12 @@ left: calc(100% + 30px);
 {
 left: 0;
 }
+}
+/* fuerza chacla */
+
 
 /* ubicacion */
-}
+
 .ubicacion{
     width: 100%;
     margin-left: 40px;
@@ -172,4 +285,53 @@ left: 0;
 ul .ubicacion{
     text-align: left;
     font-size: 2rem;
+}
+
+/* mi lista */
+.shopping-list {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.shopping-list h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.shopping-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shopping-list li {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .shopping-list {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .shopping-list h2 {
+    font-size: 20px;
+  }
+
+  .shopping-list li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
+
+.resaltado {
+    text-shadow: 1px 1px #33cc33;
+}
+
+/* donativos */
+
+.ajuste-donativos{
+  padding-top: 180px;
 }
